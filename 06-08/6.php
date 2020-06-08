@@ -17,8 +17,6 @@ class DB{
         if(!self::$instance instanceof self)
             self::$instance =new self();
             return self::$instance;
-        
-        
     }
 }
 // 测试
