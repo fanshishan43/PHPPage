@@ -18,9 +18,18 @@ class DB{
             self::$instance =new self();
             return self::$instance;
     }
+    function self(){
+        echo '哈哈';
+    }
+    function self2(){
+        echo '哈哈';
+    }
+  
+  
 }
 // 测试
 $db1=DB::getInstance();
 $db2=DB::getInstance();
+$db2->self();
 
 var_dump($db1,$db2);
